@@ -1,54 +1,110 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>個人作品集</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <header class="bg-dark text-white py-3">
-    <div class="container">
-      <h1 class="text-center">我的作品集</h1>
-      <nav>
-        <ul class="nav justify-content-center">
-          <li class="nav-item"><a href="#about" class="nav-link text-white">關於我</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link text-white">技能</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link text-white">作品</a></li>
-
-<section id="profile" class="mb-4 text-center">
-  <h2></h2>
-  <img src="attached_assets/IMG_8922 (1).jpg" alt="個人照片" class="img-fluid rounded-circle profile-image">
-</section>
-
-          <li class="nav-item"><a href="#contact" class="nav-link text-white">聯絡方式</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">作品集</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">作品集</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main class="container py-4">
-    <section id="about" class="mb-4">
-      <h2>關於我</h2>
-      <p>姓名：張喻婷<br>
-         系級：四企管三<br>
-         學號：B11108023</p>
+  <div class="container mt-3 text-center">
+    <img src="0.jpg" alt="Personal Photo"
+      class="img-fluid rounded-circle" style="max-width: 200px;">
+  </div>
+
+  <main class="container mt-5">
+    <section id="about" class="section py-5">
+      <h1>關於我</h1>
+      <p>
+        張喻婷<br>
+        國立台灣科技大學 企業管理系<br>
+      </p>
     </section>
-    <!-- "技能" section removed -->
-    <section id="projects" class="mb-4">
-      <h2>作品</h2>
-      <p>在這裡展示你的作品。</p>
-    </section>
-    <section id="contact" class="mb-5">
+
+    <section id="projects" class="section py-5">
+      <h2>作品集</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title">作品 1</h3>
+              <img src="1.png" alt="Future Unbounded" class="img-fluid mb-3">
+              <p class="card-text">
+               更換背景 物品偵測<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title">作品 2</h3>
+              <img src="2.png" alt="Future Unbounded" class="img-fluid mb-3">
+              <p class="card-text">
+               肢體動作偵測<br>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title">作品 3</h3>
+              <img src="3.png" alt="Future Unbounded" class="img-fluid mb-3">
+              <p class="card-text">
+               肢體動作偵測<br>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title">作品 4</h3>
+              <img src="4.png" alt="Student Project" class="img-fluid mb-3">
+             <a href="https://www.youtube.com/watch?v=IrHQHomGVfU"
+     <p class="card-text">
+               專題作品-請問今天吃什麼<br>
+            </div>
+          </div>
+        </div>
+
+    <section id="contact" class="section py-5">
       <h2>聯絡方式</h2>
-      <p>電話：0961523802<br>
-         E-mail：yuting921123@gmail.com</p>
+      <p>
+        電話: 0961523802<br>
+        E-mail: yuting921123@gmail.com
+      </p>
     </section>
   </main>
-  <footer>
+
+  <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 張喻婷</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

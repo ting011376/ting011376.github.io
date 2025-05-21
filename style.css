@@ -1,54 +1,40 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #ffe4e1;
+  color: #333;
+}
+header, footer {
+  background-color: #ffc0cb;
+  color: white;
+  padding: 1rem 0;
 }
 
-header {
-  background: #ffb6c1; /* 淺粉紅色 */
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+h1, h2, h3 {
+  color: #d87093;
 }
 
-nav ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #d87093;
 }
 
-nav ul li {
-  margin: 0 10px;
+.card {
+  border: 1px solid #ffc0cb;
 }
 
-nav ul li a {
-  color: #ffb6c1; /* 淺粉紅色 */
-  text-decoration: none;
+.card-title {
+  color: #c71585;
 }
 
-main {
-  padding: 20px;
+.card-text {
+  color: #e75480;
 }
 
-
-.profile-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
 }
 
-section {
-  margin-bottom: 20px;
-}
-
-footer {
-  background: #ffb6c1; /* 淺粉紅色 */
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+button:hover {
+  background-color: #ff1493;
 }
